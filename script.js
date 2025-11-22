@@ -1,4 +1,4 @@
-// --- User Class ---
+
 class User {
   constructor(firstName, lastName, email, password) {
     this.firstName = firstName;
@@ -8,7 +8,6 @@ class User {
   }
 }
 
-// --- Sign Up Function ---
 function handleSignup(event) {
     event.preventDefault();
 
@@ -33,12 +32,10 @@ function handleSignup(event) {
         localStorage.setItem("User", JSON.stringify(savedData));
         alert("Signup Successful! Please Login.");
         
-        // --- Redirection ---
         window.location.href = "Signin.html"; // Signin Page par bhej do
     }
 }
 
-// --- Sign In Function (The Fix) ---
 function handleLogin(event) {
     event.preventDefault();
 
@@ -51,7 +48,6 @@ function handleLogin(event) {
 
     let savedData = JSON.parse(localStorage.getItem("User")) || [];
 
-    // User ko email aur password se dhoondo
     let foundUser = savedData.find(
         (element) => element.email === email && element.password === password
     );
@@ -59,15 +55,11 @@ function handleLogin(event) {
     if (foundUser) {
         alert("Login successfully");
         
-        // **⭐ PROPER FIX:** Session key ko hamesha 'linkedin_active_session' se save karo
         localStorage.setItem("linkedin_active_session", JSON.stringify(foundUser)); 
         
-        // Feed Page par jao (Apne feed page ka naam likhein)
         window.location.href = "home.html"; 
         
     } else {
         alert("Invalid email or password");
     }
 }
-
-// Note: Ye functions tabhi kaam kareinge jab inko form submit event par call kiya jaye.
