@@ -441,4 +441,4 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('[onclick="removeEditPostImage()"]').onclick = () => feedApp.removeEditPostImage();
     document.querySelector('[onclick="closePostModal()"]').onclick = () => feedApp.closePostModal();
     document.querySelector('[onclick="closeEditPostModal()"]').onclick = () => feedApp.closeEditPostModal();
-});
+}); 

@@ -47,11 +47,11 @@
                     <li class="cursor-pointer hover:text-gray-900 flex flex-col justify-center w-14"><i class="fa-solid fa-briefcase text-xl mb-1"></i> Jobs</li>
                     
                     <li class="cursor-pointer hover:text-gray-900 flex flex-col justify-center w-14 relative" onclick="toggleProfileMenu()">
-                        <img id="navAvatar" src="/placeholder.svg" class="w-6 h-6 rounded-full mx-auto mb-1 border">
+                        <img id="navAvatar" src="" class="w-6 h-6 rounded-full mx-auto mb-1 border">
                         <span>Me <i class="fa-solid fa-caret-down"></i></span>
                         <div id="profileMenu" class="absolute top-[52px] right-0 bg-white shadow-lg border rounded-b-lg w-64 hidden flex-col p-2 text-left z-50">
                             <div class="flex gap-2 mb-2 p-1">
-                                <img id="menuAvatar" onclick="changeProfileImage()" src="/placeholder.svg" class="w-12 h-12 rounded-full cursor-pointer">
+                                <img id="menuAvatar" onclick="changeProfileImage()" src="" class="w-12 h-12 rounded-full cursor-pointer">
                                 <div>
                                     <h4 id="menuName" class="font-bold text-base text-gray-900"></h4>
                                     <p id="menuHeadline" class="text-gray-500 line-clamp-1"></p>
@@ -69,24 +69,10 @@
         <aside class="hidden md:block md:col-span-3">
             <div class="bg-white rounded-lg border overflow-hidden text-center relative mb-2">
                 <div class="h-14 bg-gray-300"></div>
-                <img id="sidebarAvatar" onclick="changeProfileImage()" src="/placeholder.svg" class="w-[72px] h-[72px] rounded-full border-2 border-white absolute top-4 left-1/2 -translate-x-1/2 bg-white cursor-pointer">
+                <img id="sidebarAvatar" onclick="changeProfileImage()" src="" class="w-[72px] h-[72px] rounded-full border-2 border-white absolute top-4 left-1/2 -translate-x-1/2 bg-white cursor-pointer">
                 <div class="mt-12 pb-4 border-b">
                     <h2 id="sidebarName" class="font-bold hover:underline cursor-pointer"></h2>
                     <p id="sidebarHeadline" class="text-xs text-gray-500 px-2"></p>
-                </div>
-                <div class="text-left p-3 text-xs text-gray-500 border-b">
-                    <div class="flex justify-between py-1 hover:bg-gray-100 cursor-pointer px-2 -mx-2">
-                        <span>Who's viewed your profile</span>
-                        <span class="text-linkedin-blue font-semibold">32</span>
-                    </div>
-                    <div class="flex justify-between py-1 hover:bg-gray-100 cursor-pointer px-2 -mx-2">
-                        <span>Impressions of your post</span>
-                        <span class="text-linkedin-blue font-semibold">1,204</span>
-                    </div>
-                </div>
-                <div class="text-left p-3 text-xs hover:bg-gray-100 cursor-pointer">
-                    <span class="block text-gray-500">Access exclusive tools & insights</span>
-                    <span class="font-semibold underline decoration-amber-400 decoration-2">Try Premium for free</span>
                 </div>
             </div>
         </aside>
@@ -94,7 +80,7 @@
         <div class="col-span-1 md:col-span-9 lg:col-span-6">
             <div class="bg-white rounded-lg border p-4 mb-4">
                 <div class="flex gap-3">
-                    <img id="feedInputAvatar" src="/placeholder.svg" class="w-12 h-12 rounded-full border">
+                    <img id="feedInputAvatar" src="" class="w-12 h-12 rounded-full border">
                     <button onclick="openPostModal()" class="flex-1 text-left border rounded-full px-4 py-3 hover:bg-gray-100 font-semibold text-gray-500 text-sm">Start a post</button>
                 </div>
                 <div class="flex justify-between mt-2 px-4">
@@ -111,9 +97,6 @@
                 <h2 class="font-semibold text-sm mb-4">LinkedIn News</h2>
                 <ul class="space-y-3">
                     <li class="flex gap-2 items-start cursor-pointer hover:bg-gray-50 p-1"><i class="fa-solid fa-circle text-[6px] mt-2 text-gray-600"></i> <div><h3 class="text-sm font-semibold line-clamp-1">New AI Trends</h3><p class="text-xs text-gray-500">1h ago • 5,000 readers</p></div></li>
-                    <li class="flex gap-2 items-start cursor-pointer hover:bg-gray-50 p-1"><i class="fa-solid fa-circle text-[6px] mt-2 text-gray-600"></i> <div><h3 class="text-sm font-semibold line-clamp-1">Tech Hiring Updates</h3><p class="text-xs text-gray-500">3h ago • 12,432 readers</p></div></li>
-                    <li class="flex gap-2 items-start cursor-pointer hover:bg-gray-50 p-1"><i class="fa-solid fa-circle text-[6px] mt-2 text-gray-600"></i> <div><h3 class="text-sm font-semibold line-clamp-1">Remote Work Policies</h3><p class="text-xs text-gray-500">5h ago • 8,100 readers</p></div></li>
-                    <li class="flex gap-2 items-start cursor-pointer hover:bg-gray-50 p-1"><i class="fa-solid fa-circle text-[6px] mt-2 text-gray-600"></i> <div><h3 class="text-sm font-semibold line-clamp-1">Startup Funding Q3</h3><p class="text-xs text-gray-500">1d ago • 2,300 readers</p></div></li>
                 </ul>
             </div>
         </aside>
@@ -127,7 +110,7 @@
             </div>
             <div class="p-6">
                 <div class="flex items-center gap-3 mb-4">
-                    <img id="modalAvatar" src="/placeholder.svg" class="w-12 h-12 rounded-full border">
+                    <img id="modalAvatar" src="" class="w-12 h-12 rounded-full border">
                     <h3 id="modalName" class="font-semibold"></h3>
                 </div>
                 <textarea id="postTextarea" rows="4" placeholder="What do you want to talk about?" class="w-full text-lg outline-none resize-none placeholder-gray-500"></textarea>
@@ -153,7 +136,7 @@
             </div>
             <div class="p-6">
                 <div class="flex items-center gap-3 mb-4">
-                    <img id="editModalAvatar" src="/placeholder.svg" class="w-12 h-12 rounded-full border">
+                    <img id="editModalAvatar" src="" class="w-12 h-12 rounded-full border">
                     <h3 id="editModalName" class="font-semibold"></h3>
                 </div>
                 <textarea id="editPostTextarea" rows="4" placeholder="What do you want to talk about?" class="w-full text-lg outline-none resize-none placeholder-gray-500"></textarea>
@@ -171,395 +154,8 @@
         </div>
     </div>
 
-    <script>
-        // --- 0. GLOBAL SETUP AND AUTHENTICATION ---
-        
-        const activeSessionKey = 'linkedin_active_session';
-        let loggedInUser = JSON.parse(localStorage.getItem(activeSessionKey));
+    <script src="home.js">
 
-        if (!loggedInUser) {
-            window.location.href = "login.html"; // Redirect to login.html
-        }
-
-        const currentUser = {
-            name: `${loggedInUser.firstName} ${loggedInUser.lastName}`,
-            headline: loggedInUser.headline || "Frontend Developer | Student", 
-            avatar: loggedInUser.avatar || "https://github.com/shadcn.png", 
-            id: loggedInUser.email
-        };
-
-        const userLikesKey = `linkedin_likes_${currentUser.id}`; 
-        let userLikes = JSON.parse(localStorage.getItem(userLikesKey)) || {};
-
-        // ⭐ NEW: Key for storing user-specific hidden posts IDs (Remove from Feed)
-        const userHiddenPostsKey = `linkedin_hidden_posts_${currentUser.id}`; 
-        let userHiddenPosts = JSON.parse(localStorage.getItem(userHiddenPostsKey)) || [];
-
-        // Hidden input fields for file uploads
-        const imageUploader = document.createElement('input'); 
-        imageUploader.type = 'file'; imageUploader.accept = 'image/*'; imageUploader.style.display = 'none';
-        document.body.appendChild(imageUploader);
-
-        const postImageUploader = document.createElement('input'); 
-        postImageUploader.type = 'file'; postImageUploader.accept = 'image/*'; postImageUploader.style.display = 'none';
-        document.body.appendChild(postImageUploader);
-
-        // Global state for post modals
-        let currentPostImageURL = null; // For create post modal
-        let editingPostId = null; // ID of the post currently being edited
-        let editingPostImageURL = null; // For edit post modal image data
-
-        // Default posts
-        const defaultPosts = [
-            { 
-                id: 1, 
-                author: "Elon Musk", 
-                authorImg: "https://upload.wikimedia.org/wikipedia/commons/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg", 
-                headline: "CEO of Tesla & SpaceX", 
-                timestamp: Date.now() - 7200000, 
-                content: "Mars is looking great! 🚀 #SpaceX", 
-                postImage: null, 
-                likes: 4500, 
-            },
-            { 
-                id: 2, 
-                author: "Satya Nadella", 
-                authorImg: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Satya_Nadella_at_the_Microsoft_Think_Event_in_San_Francisco%2C_2017.jpg", 
-                headline: "CEO of Microsoft", 
-                timestamp: Date.now() - 3600000, 
-                content: "AI is augmenting human creativity. Excited for the future of work! #Innovation", 
-                postImage: null, 
-                likes: 2100, 
-            }
-        ];
-        let posts = JSON.parse(localStorage.getItem('linkedin_posts_db')) || defaultPosts;
-
-        // --- 1. USER & IMAGE FUNCTIONS ---
-
-        function updateUserInfo() {
-            const ids = ['navAvatar', 'menuAvatar', 'sidebarAvatar', 'feedInputAvatar', 'modalAvatar', 'editModalAvatar'];
-            const nameIds = ['menuName', 'sidebarName', 'modalName', 'editModalName'];
-            const headlineIds = ['menuHeadline', 'sidebarHeadline'];
-
-            ids.forEach(id => {
-                const el = document.getElementById(id);
-                if(el) el.src = currentUser.avatar; 
-            });
-            nameIds.forEach(id => {
-                const el = document.getElementById(id);
-                if(el) el.innerText = currentUser.name; 
-            });
-            headlineIds.forEach(id => {
-                const el = document.getElementById(id);
-                if(el) el.innerText = currentUser.headline;
-            });
-        }
-
-        function changeProfileImage() {
-            imageUploader.click();
-            imageUploader.onchange = function(e) {
-                const file = e.target.files[0];
-                if (!file) return;
-
-                const reader = new FileReader();
-                reader.onload = function(event) {
-                    const newBase64Image = event.target.result;
-
-                    let userSessionData = JSON.parse(localStorage.getItem(activeSessionKey));
-                    userSessionData.avatar = newBase64Image; 
-                    localStorage.setItem(activeSessionKey, JSON.stringify(userSessionData)); 
-
-                    currentUser.avatar = newBase64Image; 
-                    updateUserInfo(); 
-                    renderFeed(); 
-                    alert("Profile image updated successfully!");
-                };
-                reader.readAsDataURL(file);
-            };
-        }
-
-        function timeAgo(timestamp) {
-            const seconds = Math.floor((Date.now() - timestamp) / 1000);
-            if (seconds < 60) return `${seconds}s`; 
-            const minutes = Math.floor(seconds / 60);
-            if (minutes < 60) return `${minutes}m`; 
-            const hours = Math.floor(minutes / 60);
-            if (hours < 24) return `${hours}h`; 
-            const days = Math.floor(hours / 24);
-            return `${days}d`;
-        }
-
-        // --- 2. CREATE POST LOGIC ---
-
-        function openPostModal() { document.getElementById('postModal').classList.remove('hidden'); }
-        
-        function closePostModal() { 
-            document.getElementById('postModal').classList.add('hidden'); 
-            document.getElementById('postTextarea').value = "";
-            removePostImage(); 
-        }
-
-        function openImageUploadForPost() {
-            postImageUploader.click();
-            postImageUploader.onchange = function(e) {
-                const file = e.target.files[0];
-                if (!file) return;
-
-                const reader = new FileReader();
-                reader.onload = function(event) {
-                    currentPostImageURL = event.target.result;
-                    document.getElementById('previewImage').src = currentPostImageURL;
-                    document.getElementById('postImagePreview').classList.remove('hidden');
-                };
-                reader.readAsDataURL(file);
-            };
-        }
-
-        function removePostImage() {
-            currentPostImageURL = null;
-            document.getElementById('postImagePreview').classList.add('hidden');
-            document.getElementById('previewImage').src = '';
-        }
-
-        function addPost() {
-            const content = document.getElementById('postTextarea').value.trim();
-            
-            if(!content && !currentPostImageURL) return alert("Please write something or add an image!");
-
-            const newPost = {
-                id: Date.now(),
-                author: currentUser.name,
-                authorImg: currentUser.avatar,
-                headline: currentUser.headline,
-                timestamp: Date.now(), 
-                postImage: currentPostImageURL, 
-                likes: 0, 
-            };
-
-            posts.unshift(newPost);
-            renderFeed();
-            closePostModal();
-        }
-
-        // --- 3. EDIT POST LOGIC ---
-
-        function openEditPostModal(postId) {
-            editingPostId = postId;
-            const postToEdit = posts.find(p => p.id === postId);
-            if (!postToEdit) return;
-
-            document.getElementById('editPostTextarea').value = postToEdit.content;
-            document.getElementById('editModalName').innerText = currentUser.name;
-            document.getElementById('editModalAvatar').src = currentUser.avatar;
-
-            editingPostImageURL = postToEdit.postImage;
-            if (editingPostImageURL) {
-                document.getElementById('editPreviewImage').src = editingPostImageURL;
-                document.getElementById('editPostImagePreview').classList.remove('hidden');
-            } else {
-                document.getElementById('editPostImagePreview').classList.add('hidden');
-                document.getElementById('editPreviewImage').src = '';
-            }
-
-            document.getElementById('editPostModal').classList.remove('hidden');
-        }
-
-        function closeEditPostModal() {
-            document.getElementById('editPostModal').classList.add('hidden');
-            editingPostId = null;
-            editingPostImageURL = null;
-            document.getElementById('editPostTextarea').value = "";
-            document.getElementById('editPostImagePreview').classList.add('hidden');
-        }
-
-        function openImageUploadForEditPost() {
-            postImageUploader.click(); 
-            postImageUploader.onchange = function(e) {
-                const file = e.target.files[0];
-                if (!file) return;
-
-                const reader = new FileReader();
-                reader.onload = function(event) {
-                    editingPostImageURL = event.target.result; 
-                    document.getElementById('editPreviewImage').src = editingPostImageURL;
-                    document.getElementById('editPostImagePreview').classList.remove('hidden');
-                };
-                reader.readAsDataURL(file);
-            };
-        }
-
-        function removeEditPostImage() {
-            editingPostImageURL = null;
-            document.getElementById('editPostImagePreview').classList.add('hidden');
-            document.getElementById('editPreviewImage').src = '';
-        }
-
-        function saveEditedPost() {
-            const editedContent = document.getElementById('editPostTextarea').value.trim();
-            
-            if (!editedContent && !editingPostImageURL) {
-                alert("Please write something or add an image!");
-                return;
-            }
-
-            posts = posts.map(post => {
-                if (post.id === editingPostId) {
-                    return {
-                        ...post,
-                        content: editedContent,
-                        postImage: editingPostImageURL, 
-                    };
-                }
-                return post;
-            });
-
-            renderFeed();
-            closeEditPostModal();
-        }
-
-        // --- 4. FEED RENDER AND ACTIONS ---
-
-        function renderFeed() {
-            const container = document.getElementById('feedContainer');
-            const searchInput = document.getElementById('searchInput').value.toLowerCase();
-            container.innerHTML = '';
-
-            // ⭐ FIX 1: Filter out posts hidden by the current user
-            const visiblePosts = posts.filter(post => !userHiddenPosts.includes(post.id));
-
-            const filteredPosts = visiblePosts.filter(post => {
-                return post.author.toLowerCase().includes(searchInput) || post.content.toLowerCase().includes(searchInput);
-            });
-
-            if (filteredPosts.length === 0) {
-                container.innerHTML = `<p class="text-center text-gray-500 mt-4">No posts found in your feed.</p>`;
-                return;
-            }
-
-            filteredPosts.forEach(post => {
-                const isMyPost = post.author === currentUser.name;
-                
-                // Buttons
-                const deleteButton = isMyPost ? `<button onclick="deletePost(${post.id})" title="Delete Post" class="text-gray-400 hover:text-red-600 ml-2"><i class="fa-solid fa-trash"></i></button>` : '';
-                const editButton = isMyPost ? `<button onclick="openEditPostModal(${post.id})" title="Edit Post" class="text-gray-400 hover:text-gray-600"><i class="fa-solid fa-pen-to-square"></i></button>` : '';
-                // ⭐ NEW: Hide Post button for other users' posts
-                const hideButton = !isMyPost ? `<button onclick="hidePost(${post.id})" title="Hide Post" class="text-gray-400 hover:text-gray-600"><i class="fa-solid fa-xmark"></i></button>` : '';
-
-                // Time and Image
-                const displayTime = timeAgo(post.timestamp);
-                const postImageHtml = post.postImage 
-                    ? `<img src="${post.postImage}" class="w-full h-auto object-cover rounded-md mt-2 border" alt="Post Image">` 
-                    : '';
-
-                // Likes
-                const isLiked = userLikes[post.id] === true;
-                const likeColor = isLiked ? 'text-linkedin-blue' : 'text-gray-600';
-                const likeIconType = isLiked ? 'fa-solid' : 'fa-regular';
-
-                const html = `
-                    <div class="bg-white rounded-lg border p-3 animate-fadeIn">
-                        <div class="flex gap-3 mb-2">
-                            <img src="${post.authorImg}" class="w-12 h-12 rounded-full object-cover border cursor-pointer">
-                            <div class="flex-1">
-                                <div class="flex justify-between">
-                                    <div>
-                                        <h3 class="font-semibold text-sm hover:text-linkedin-blue cursor-pointer">${post.author}</h3>
-                                        <p class="text-xs text-gray-500">${post.headline}</p>
-                                        <p class="text-xs text-gray-400 mt-0.5">${displayTime} • <i class="fa-solid fa-earth-americas"></i></p>
-                                    </div>
-                                    <div class="flex items-center gap-2">
-                                        ${editButton}
-                                        ${deleteButton}
-                                        ${hideButton} 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="text-sm text-gray-900 mb-2 whitespace-pre-wrap">${post.content}</p>
-                        
-                        ${postImageHtml}
-
-                        <div class="flex items-center gap-1 text-xs text-gray-500 border-b pb-2 mb-1">
-                                <i class="fa-solid fa-thumbs-up text-linkedin-blue"></i> <span>${post.likes || 0}</span>
-                        </div>
-                        <div class="flex justify-between pt-1">
-                                <button onclick="toggleLike(${post.id})" class="flex-1 py-3 hover:bg-gray-100 rounded flex items-center justify-center gap-2 text-sm font-semibold text-gray-600">
-                                    <i class="${likeIconType} fa-thumbs-up ${likeColor} text-lg"></i> <span class="${likeColor}">Like</span>
-                                </button>
-                                <button class="flex-1 py-3 hover:bg-gray-100 rounded flex items-center justify-center gap-2 text-sm font-semibold text-gray-600"><i class="fa-regular fa-comment-dots text-lg"></i> Comment</button>
-                                <button class="flex-1 py-3 hover:bg-gray-100 rounded flex items-center justify-center gap-2 text-sm font-semibold text-gray-600"><i class="fa-solid fa-retweet text-lg"></i> Repost</button>
-                                <button class="flex-1 py-3 hover:bg-gray-100 rounded flex items-center justify-center gap-2 text-sm font-semibold text-gray-600"><i class="fa-solid fa-paper-plane text-lg"></i> Send</button>
-                        </div>
-                    </div>
-                `;
-                container.innerHTML += html;
-            });
-            
-            // Save global data (posts) and user-specific data (likes, hidden posts)
-            localStorage.setItem('linkedin_posts_db', JSON.stringify(posts));
-            localStorage.setItem(userLikesKey, JSON.stringify(userLikes));
-            localStorage.setItem(userHiddenPostsKey, JSON.stringify(userHiddenPosts)); // ⭐ FIX 2: Save hidden posts
-        }
-
-        // --- Post Actions ---
-
-        function toggleLike(id) {
-            const postIndex = posts.findIndex(p => p.id === id);
-            if (postIndex === -1) return;
-
-            const isCurrentlyLiked = userLikes[id] === true;
-
-            if (isCurrentlyLiked) {
-                posts[postIndex].likes = (posts[postIndex].likes || 1) - 1;
-                delete userLikes[id];
-            } else {
-                posts[postIndex].likes = (posts[postIndex].likes || 0) + 1;
-                userLikes[id] = true;
-            }
-
-            renderFeed();
-        }
-
-        function deletePost(id) {
-            if(confirm("Are you sure you want to permanently delete this post?")) {
-                posts = posts.filter(p => p.id !== id);
-                renderFeed();
-            }
-        }
-
-        // ⭐ NEW: Function to hide a post from the current user's feed
-        function hidePost(id) {
-            if (confirm("Are you sure you want to hide this post from your feed?")) {
-                // Add post ID to the user's hidden list
-                if (!userHiddenPosts.includes(id)) {
-                    userHiddenPosts.push(id);
-                }
-                renderFeed(); // Re-render the feed to apply the filter
-            }
-        }
-
-        // --- 5. GLOBAL UI & MODAL FUNCTIONS ---
-        
-        function toggleProfileMenu() {
-            const menu = document.getElementById('profileMenu');
-            menu.classList.toggle('hidden');
-            menu.classList.toggle('flex');
-        }
-        function logout() {
-            localStorage.removeItem(activeSessionKey);
-            window.location.href = "login.html"; // Redirect to login.html
-        }
-
-        window.onclick = function(event) {
-            if (event.target == document.getElementById('postModal')) closePostModal();
-            if (event.target == document.getElementById('editPostModal')) closeEditPostModal();
-        }
-
-        // --- INITIALIZE ---
-        if (loggedInUser) {
-            updateUserInfo();
-            renderFeed();
-        }
 
     </script>
 </body>
